@@ -59,7 +59,7 @@ h1, h2, h3, p { margin-top: 0; }
 .art-caption { position: absolute; top: 20px; left: 5px; font: 700 14px/1.2 var(--mono); text-transform: uppercase; transform: rotate(-13deg); }
 .art-sticker { position: absolute; z-index: 2; right: -20px; bottom: 65px; display: grid; width: 90px; height: 90px; place-content: center; border-radius: 50%; background: var(--lime); color: var(--ink); text-align: center; font: 700 15px/1.25 var(--mono); transform: rotate(12deg); }
 .hero-bottom { position: absolute; bottom: 31px; left: 10%; right: 10%; display: flex; justify-content: space-between; color: var(--ink); font: 14px var(--mono); letter-spacing: .5px; text-transform: uppercase; }
-.scroll-note { display: flex; gap: 10px; }
+.scroll-note { position: absolute; left: 50%; display: flex; gap: 10px; transform: translateX(-50%); white-space: nowrap; }
 
 .reveal-section { position: relative; min-height: 690px; padding: 34px 10% 85px; overflow: hidden; background: var(--green); color: var(--cream); text-align: center; }
 .section-topline { display: flex; justify-content: space-between; color: currentColor; opacity: .7; text-align: left; }
