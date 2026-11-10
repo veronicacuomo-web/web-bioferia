@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2a0e27">
+    <meta name="description" content="Tu carrito de la tienda Bioferia.">
+    <title>Carrito — Bioferia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="merch.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="home.html#inicio" aria-label="Bioferia, inicio">
+            <img class="brand-logo" src="assets/bioferia-logo.png" alt="">
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="merch.html">Merch</a>
+            <a href="home.html#contacto">Contacto</a>
+            <a href="home.html#entradas">Entradas</a>
+        </nav>
+        <a class="header-cta merch-cart-link" href="carrito.html" aria-current="page">Carrito <span class="cart-count" data-cart-count>0</span></a>
+    </header>
+
+    <main id="inicio" class="cart-page">
+        <div class="cart-heading">
+            <div><p class="eyebrow">TU SELECCIÓN BIOFERIA</p><h1>Tu carrito.</h1></div>
+            <a href="merch.html#tienda">← Seguir explorando</a>
+        </div>
+        <div class="cart-layout">
+            <section id="cart-items" class="cart-items" aria-label="Productos en tu carrito"></section>
+            <aside class="cart-summary" id="cart-summary">
+                <h2>Resumen del pedido</h2>
+                <div class="summary-row"><span>Subtotal</span><span id="cart-subtotal">$0</span></div>
+                <div class="summary-row"><span>Envío</span><span>A coordinar</span></div>
+                <div class="summary-row summary-total"><span>Total</span><span id="cart-total">$0</span></div>
+                <button class="checkout-button" id="checkout-button" type="button">Continuar pedido <span>↗</span></button>
+                <p class="cart-disclaimer">El botón prepara un correo para coordinar pago, entrega y disponibilidad. El envío se cotiza aparte.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="home.html#inicio" aria-label="Bioferia, volver al inicio"><img class="brand-logo" src="assets/bioferia-logo.png" alt=""></a>
+        <nav class="footer-social" aria-label="Redes sociales">
+            <a href="https://www.facebook.com/BioferiaOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.7-4.5 4.7v1.9h-3v3.2h3V21h3.9Z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@bioferia" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 8.3a7.1 7.1 0 0 1-4.4-1.5v7.1a6.1 6.1 0 1 1-5.3-6.1v3.6a2.7 2.7 0 1 0 1.8 2.5V2.5h3.5a7.1 7.1 0 0 0 4.4 4.3v1.5Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/bio.feria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/bioferia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 8.7A1.8 1.8 0 1 1 6.9 5a1.8 1.8 0 0 1 0 3.7ZM5.2 9.9h3.4V19H5.2V9.9Zm5.5 0h3.3v1.2h.1c.5-.9 1.7-1.8 3.6-1.8 3.8 0 4.5 2.5 4.5 5.8V19h-3.4v-17.1c0-1.3-.1-3-1.8-3-1.9 0-2.2 1.5-2.2 2.9V19h-3.5V9.9Z"/></svg>
+            </a>
+        </nav>
+        <span>Hacé que cuente.</span>
+        <a href="#inicio">Volver arriba ↑</a>
+        <span class="footer-copy">© Bioferia 2027 · Buenos Aires</span>
+    </footer>
+
+    <script src="merch.js"></script>
+</body>
+</html>

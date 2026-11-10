@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2a0e27">
+    <meta name="description" content="Objetos para llevar Bioferia con vos. Conocé la tienda oficial.">
+    <title>Merch — Bioferia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="merch.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="home.html#inicio" aria-label="Bioferia, inicio">
+            <img class="brand-logo" src="assets/bioferia-logo.png" alt="">
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="merch.html" aria-current="page">Merch</a>
+            <a href="home.html#contacto">Contacto</a>
+                        <a href="home.html#entradas">Entradas</a>
+        </nav>
+        <a class="header-cta merch-cart-link" href="carrito.html">Carrito <span class="cart-count" data-cart-count>0</span></a>
+    </header>
+
+    <main>
+        <section class="merch-carousel" id="inicio" aria-label="Colección Bioferia">
+            <div class="carousel-track" id="carousel-track">
+                <article class="carousel-slide slide-shirt">
+                    <img src="merch/Personal de Bioferia en el festival.png" alt="Remera clara de algodón" fetchpriority="high">
+                    <div class="slide-caption"><span>EDICIÓN 2027</span><h1>Vestí lo que<br>te mueve.</h1></div>
+                </article>
+                <article class="carousel-slide slide-tote">
+                    <img src="merch/bolsa moskup.png" alt="Bolsa reutilizable para todos los días" loading="lazy">
+                    <div class="slide-caption"><span>OBJETOS CON PROPÓSITO</span><h2>Un poquito<br>más consciente.</h2></div>
+                </article>
+                <article class="carousel-slide slide-bottle">
+                    <img src="merch/mate mockup.png" alt="Botella reutilizable para llevar" loading="lazy">
+                    <div class="slide-caption"><span>PARA LLEVAR</span><h2>Bioferia<br>va con vos.</h2></div>
+                </article>
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Foto siguiente">→</button>
+            <div class="carousel-dots" id="carousel-dots" aria-label="Elegir foto"></div>
+            <span class="carousel-index" id="carousel-index" aria-live="polite">01 / 03</span>
+        </section>
+
+        <section class="shop-section" id="tienda">
+            <div class="shop-heading">
+                <div>
+                    <h2>Pequeños objetos,<br><span>grandes ideas.</span></h2>
+                </div>
+                <p>Elegí tus favoritas y llevá un pedacito de Bioferia con vos.</p>
+            </div>
+
+            <div class="shop-layout">
+                <aside class="shop-filters" aria-label="Filtrar productos">
+                    <p class="shop-filters-title">Explorá por categoría</p>
+                    <div class="shop-filter-list">
+                        <button class="shop-filter" type="button" data-shop-filter="todos" aria-pressed="true">
+                            <span>Todos los productos</span><span>08</span>
+                        </button>
+                        <button class="shop-filter" type="button" data-shop-filter="indumentaria" aria-pressed="false">
+                            <span>Indumentaria</span><span>04</span>
+                        </button>
+                        <button class="shop-filter" type="button" data-shop-filter="reutilizables" aria-pressed="false">
+                            <span>Reutilizables</span><span>03</span>
+                        </button>
+                        <button class="shop-filter" type="button" data-shop-filter="papeleria" aria-pressed="false">
+                            <span>Papelería</span><span>01</span>
+                        </button>
+                    </div>
+                    <p class="shop-filter-note">Hacé que cuente.</p>
+                </aside>
+
+                <div class="shop-results">
+                    <p class="shop-result-count" id="shop-result-count" aria-live="polite">8 productos</p>
+                    <div class="product-grid">
+                <article class="product-card" data-product-id="buzo-mesh" data-product-name="Buzo Mesh" data-product-price="38000" data-category="indumentaria" data-detail="Buzo de hilo de lana con patrón ancho unisex con logo Bioferia.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/mesh burdeo.jpeg" alt="Buzo mesh burdeo" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                        <span class="product-badge">MÁS ELEGIDO</span>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Indumentaria</span>
+                        <div class="product-title"><h3>Buzo Mesh</h3><span>$38.000</span></div>
+                        <p>Buzo de hilo de lana con patrón ancho.</p>
+                        <label class="sr-only" for="size-remera">Talle</label>
+                        <select id="size-remera" class="product-option" aria-label="Elegir Talle">
+                            <option value="S">Talle S</option><option value="M">Talle M</option><option value="L">Talle L</option><option value="XL">Talle XL</option>
+                        </select>
+                        <select id="color-remera" class="product-option" aria-label="Elegir Color">
+                            <option value="Burdeo">Burdeo</option><option value="Azul">Azul</option>
+                        </select>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/mesh burdeo.jpeg","alt":"Buzo Mesh Burdeo"},
+                        {"src":"merch/mesh azul.png","alt":"Buzo Mesh Azul"}
+                    ]</script>
+                </article>
+
+                <article class="product-card" data-product-id="bolsa-reutilizable" data-product-name="Bolsa Reutilizable" data-product-price="26000" data-category="reutilizables" data-detail="Bolsa Bioferia reutilizable doble uso, con protector externo porta maceta y bolso tipo mochila interno.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/BOLSA KIT ENTRADA EXT.png" alt="Bolsa Reutilizable Bioferia" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                                             <span class="product-badge product-badge-light">NUEVO</span>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Reutilizables</span>
+                        <div class="product-title"><h3>Bolsa Doble</h3><span>$26.000</span></div>
+                        <p>Bolsa Bioferia reutilizable doble.</p>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/BOLSA KIT ENTRADA EXT.png","alt":"Bolsa Reutilizable Bioferia"},
+                        {"src":"merch/BOLSA KIT ENTRADA INTERIOR.png","alt":"Bolsa Reutilizable, detalle"}
+                    ]</script>
+                </article>
+
+                                <article class="product-card" data-product-id="musculosa-pez" data-product-name="Musculosa Pez" data-product-price="32000" data-category="indumentaria" data-detail="Una musculosa fresca con ilustración de pez, ideal para los días de feria.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/musculosa pez.png" alt="Musculosa Pez Bioferia" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Indumentaria</span>
+                        <div class="product-title"><h3>Musculosa Pez</h3><span>$32.000</span></div>
+                        <p>Liviana, fresca y con espíritu Bioferia.</p>
+                         <label class="sr-only" for="size-remera">Talle</label>
+                        <select id="size-remera" class="product-option" aria-label="Elegir Talle">
+                            <option value="S">Talle S</option><option value="M">Talle M</option><option value="L">Talle L</option><option value="XL">Talle XL</option>
+                        </select>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/musculosa pez.png","alt":"Musculosa Pez Bioferia"},
+                        {"src":"merch/musculosa pez colgada.png","alt":"Musculosa Pez colgada"}
+                    ]</script>
+                </article>
+
+                <article class="product-card" data-product-id="remera-abeja-pixel" data-product-name="Remera Abeja Píxel" data-product-price="27000" data-category="indumentaria" data-detail="Remera oficial Bioferia zona gastronomía, hábilitada para pymes y servicios. Hecha con algodón orgánico y estampada con tintas al agua.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/Lookbook con abeja pixelada.png" alt="Remera Abejea Bioferia" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Indumentaria</span>
+                        <div class="product-title"><h3>Remera Abeja Píxel</h3><span>$27.000</span></div>
+                        <p>Remera oficial Abeja píxel.</p>
+                        <label class="sr-only" for="size-remera">Talle</label>
+                        <select id="size-remera" class="product-option" aria-label="Elegir Talle">
+                            <option value="S">Talle S</option><option value="M">Talle M</option><option value="L">Talle L</option><option value="XL">Talle XL</option>
+                        </select>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/Lookbook con abeja pixelada.png","alt":"Remera Abejea frente"},
+                        {"src":"merch/Dorso.jpg","alt":"Remera Abeja dorso, detalle"}
+                    ]</script>
+                </article>
+
+                <article class="product-card" data-product-id="camisa-bioferia" data-product-name="Camisa Bioferia" data-product-price="42000" data-category="indumentaria" data-detail="Una camisa liviana para acompañarte en cada encuentro.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/Camisa.jpg" alt="Camisa Bioferia, frente" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Indumentaria</span>
+                        <div class="product-title"><h3>Camisa Bioferia</h3><span>$42.000</span></div>
+                        <p>Un diseño cómodo para llevar la feria con vos.</p>
+                         <label class="sr-only" for="size-remera">Talle</label>
+                        <select id="size-remera" class="product-option" aria-label="Elegir Talle">
+                            <option value="S">Talle S</option><option value="M">Talle M</option><option value="L">Talle L</option><option value="XL">Talle XL</option>
+                        </select>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/Camisa.jpg","alt":"Camisa Bioferia, frente"},
+                        {"src":"merch/camisa biof.jpeg","alt":"Camisa Bioferia, dorso"}
+                    ]</script>
+                </article>
+
+                                <article class="product-card" data-product-id="mate-de-ceramica" data-product-name="Mate de Ceramica" data-product-price="22000" data-category="reutilizables" data-detail="Mate de ceramica oficial de Bioferia con bombilla de metal.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/MATE.jpg" alt="Mate de Ceramica" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Reutilizables</span>
+                        <div class="product-title"><h3>Mate de Ceramica</h3><span>$22.000</span></div>
+                        <p>Mate de ceramica oficial Bioferia.</p>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/MATE.jpg","alt":"Mate de Ceramica"},
+                        {"src":"merch/mate mockup.png","alt":"Mate de Ceramica, detalle"}
+                    ]</script>
+                </article>
+
+                                <article class="product-card" data-product-id="cuaderno-ideas" data-product-name="Cuaderno de Ideas" data-product-price="15000" data-category="papeleria" data-detail="Un espacio para bajar ideas, anotar planes y guardar esos pensamientos que aparecen en el camino.">
+                    <div class="product-gallery" data-gallery>
+                        <img class="product-image" src="merch/cuaderno rosa.jpg" alt="Cuaderno para anotar ideas" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">←</button>
+                        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">→</button>
+                        <span class="gallery-count">1 / 2</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Papelería</span>
+                        <div class="product-title"><h3>Cuaderno de Ideas</h3><span>$15.000</span></div>
+                        <p>Un espacio en blanco para todo lo que viene.</p>
+                        <label class="sr-only" for="color-cuaderno">Color</label>
+                        <select id="color-cuaderno" class="product-option" aria-label="Elegir Color">
+                            <option value="Rosa">Rosa</option>
+                            <option value="Azul">Azul</option>
+                        </select>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                        {"src":"merch/cuaderno rosa.jpg","alt":"Cuaderno rosa"},
+                        {"src":"merch/cuaderno azul.jpg","alt":"Cuaderno azul"}
+                     ]</script>
+                </article>
+
+                                <article class="product-card" data-product-id="botella-metal" data-product-name="Botella Metal" data-product-price="18000" data-category="reutilizables" data-detail="Botella de metal reutilizable con diseño inspirado en latas aplastadas Bioferia.">
+                    <div class="product-gallery" data-gallery>
+                                        <img class="product-image" src="merch/BOTELLA.png" alt="Botella Metal Bioferia" loading="lazy">
+                        <button class="photo-expand-trigger" type="button" aria-expanded="false">Ver fotos y detalles ↗</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Reutilizables</span>
+                        <div class="product-title"><h3>Botella Metal</h3><span>$18.000</span></div>
+                        <p>Botella de metal reutilizable Bioferia.</p>
+                        <button class="add-to-cart" type="button">Agregar al carrito <span>+</span></button>
+                    </div>
+                    <script type="application/json" class="product-images">[
+                                        {"src":"merch/BOTELLA.png","alt":"Botella Metal Bioferia"}
+                    ]</script>
+                </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-note">
+            <span aria-hidden="true">✳</span>
+            <p>Elegí con intención. Disfrutá por mucho tiempo.</p>
+
+            <a href="home.html#contacto">¿Consultas mayoristas o alianzas? Escribinos ↗</a>
+        </section>
+    </main>
+
+    <dialog class="product-detail" id="product-detail" aria-labelledby="product-detail-title">
+        <div class="product-detail-gallery">
+            <img class="product-detail-image" src="" alt="">
+            <div class="product-detail-thumbnails" aria-label="Fotos del producto"></div>
+        </div>
+        <div class="product-detail-info">
+            <button class="product-detail-close" type="button" aria-label="Cerrar detalles">×</button>
+            <span class="product-category" id="product-detail-category"></span>
+            <h2 id="product-detail-title"></h2>
+            <p class="product-detail-price" id="product-detail-price"></p>
+            <p class="product-detail-description" id="product-detail-description"></p>
+            <div class="product-detail-options"></div>
+            <button class="add-to-cart product-detail-add" type="button">Agregar al carrito <span>+</span></button>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="home.html#inicio" aria-label="Bioferia, volver al inicio"><img class="brand-logo" src="assets/bioferia-logo.png" alt=""></a>
+        <nav class="footer-social" aria-label="Redes sociales">
+            <a href="https://www.facebook.com/BioferiaOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.7-4.5 4.7v1.9h-3v3.2h3V21h3.9Z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@bioferia" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 8.3a7.1 7.1 0 0 1-4.4-1.5v7.1a6.1 6.1 0 1 1-5.3-6.1v3.6a2.7 2.7 0 1 0 1.8 2.5V2.5h3.5a7.1 7.1 0 0 0 4.4 4.3v1.5Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/bio.feria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/bioferia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 8.7A1.8 1.8 0 1 1 6.9 5a1.8 1.8 0 0 1 0 3.7ZM5.2 9.9h3.4V19H5.2V9.9Zm5.5 0h3.3v1.2h.1c.5-.9 1.7-1.8 3.6-1.8 3.8 0 4.5 2.5 4.5 5.8V19h-3.4v-17.1c0-1.3-.1-3-1.8-3-1.9 0-2.2 1.5-2.2 2.9V19h-3.5V9.9Z"/></svg>
+            </a>
+        </nav>
+        <span>Hacé que cuente.</span>
+        <a href="#inicio">Volver arriba ↑</a>
+        <span class="footer-copy">© Bioferia 2027 · Buenos Aires</span>
+    </footer>
+
+    <div class="cart-toast" id="cart-toast" role="status" aria-live="polite"></div>
+    <script src="merch.js"></script>
+</body>
+</html>
