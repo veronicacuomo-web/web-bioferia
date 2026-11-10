@@ -34,7 +34,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .header-cta { padding: 12px 17px; border: 1px solid var(--cream); border-radius: 40px; }
 .header-cta span { padding-left: 9px; }
 
-.hero { position: relative; min-height: 730px; height: min(840px, 100vh); padding: 180px 10% 110px; overflow: hidden; background: var(--paper); color: var(--ink); }
+.hero { position: relative; min-height: 730px; height: min(840px, 100vh); padding: 150px 10% 110px; overflow: hidden; background: var(--paper); color: var(--ink); }
 .hero-copy { position: relative; z-index: 2; max-width: 600px; }
 .eyebrow, .section-topline, .card-tag, .map-kicker, .ticket-top, .ticket-bottom, .contact-topline { font: 500 14px/1.5 var(--mono); letter-spacing: 1px; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 25px; }
@@ -43,7 +43,7 @@ h1, h2, h3, p { margin-top: 0; }
 .hero h1 { margin: 0; font: 800 clamp(66px, 8.3vw, 116px)/.91 var(--display); letter-spacing: -.085em; }
 .hero h1 span { color: var(--green); font-style: italic; }
 .hero-text { max-width: 425px; margin: 28px 0 25px; color: rgba(42, 14, 39, .72); font-size: 18px; line-height: 1.65; }
-.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 35px; min-height: 52px; padding: 0 20px; border: 0; border-radius: 2px; font-size: 16px; font-weight: 700; cursor: pointer; transition: transform .2s, background .2s; }
+.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 35px; min-height: 58px; padding: 0 26px; border: 0; border-radius: 2px; font-size: 17px; font-weight: 700; cursor: pointer; transition: transform .2s, background .2s; }
 .button:hover { transform: translateY(-3px); }
 .button-dark { background: var(--green); color: white; }
 .button-dark:hover { background: var(--ink); }
@@ -189,7 +189,7 @@ h1, h2, h3, p { margin-top: 0; }
     .main-nav a { display: none; }
     .main-nav a[href="#contacto"] { display: inline; }
     .header-cta { padding: 10px 12px; }
-    .hero { height: auto; min-height: 760px; padding: 150px 7% 115px; }
+    .hero { height: auto; min-height: 800px; padding: 130px 7% 145px; }
     .hero h1 { font-size: clamp(54px, 14vw, 82px); }
     .hero-text { max-width: 300px; font-size: 17px; }
     .hero-bottom { left: 7%; right: 7%; bottom: 22px; font-size: 12px; }.scroll-note { display: none; }
